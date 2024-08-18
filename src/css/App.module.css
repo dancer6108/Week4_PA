@@ -1,0 +1,7 @@
+.container {
+    margin: 5vh auto;
+    padding: 2vh 0;
+    width: 40%;
+    background-color: slateblue;
+    border-radius: 5vw;
+}

@@ -1,0 +1,74 @@
+.container {
+    width: 30%;
+    margin: auto auto auto auto;
+}
+
+.counter {
+    text-align: center;
+    margin: auto auto 2vh auto;
+    font-size: 3em;
+    color: aliceblue;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.button_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: fit-content;
+    height: 5vh;
+    margin: 0 1vw 1vh 0;
+    padding: 0 2vw 0 2vw;
+    white-space: nowrap;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.5);
+    background-color: whitesmoke;
+    color: black;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: slategray;
+    color: whitesmoke;
+}
+
+.button:active {
+    transform: translateY(2px);
+    background-color: slategray;
+    color: whitesmoke;
+    box-shadow: 0 2px black;
+}
+
+.button_dis {
+    opacity: 50%;
+    width: fit-content;
+    height: 5vh;
+    margin: 0 1vw 1vh 0;
+    padding: 0 2vw 0 2vw;
+    white-space: nowrap;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.5);
+    background-color: whitesmoke;
+    color: black;
+}
+
+.button_dis:hover {
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 700px) {
+    .button_cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .button, .button_dis {
+        margin: 1vh 0 1vh 0;
+    }
+}
